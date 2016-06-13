@@ -3,11 +3,9 @@ Heatmap install-instructions:
 
 1.	Import database.sql on your webserver i.e. using phpMyAdmin.
 
-2a.	Edit www/config.php to suit your needs.
+2a.	Create www/config.php (see www/config.sample.php)
 
-2b. Upload contents of www-directory to your webserver.
-
-2c.	Change permissions of 'timelapse' directory to 777!!!
+2b. 	Upload contents of www-directory to your webserver.
 
 3a.	Edit HeatmapSensor.ino to suit your needs. Each sensor should have a unique ID.
 	Do not leave gaps in the numbering! It's important to point at the right server
@@ -22,14 +20,13 @@ Heatmap install-instructions:
 
 3e.	Move jumper from GPIO12-GPIO14 to GPIO12-GPIO13.
 
-
 If you did everything according to these instructions, your Heatmap should work. If
 you need an image instead of a refreshing webpage, just point to 
 wherever-you-located-your-heatmap/image.php
 
 Files to edit when customizing:
 
-config.php: number of sensors
-image.php: map rooms
-images/map.png: background for your heatmap
-images/overlay.png: this will be placed on top of your map+heatmap	
+www/config.php: number of sensors
+www/image.php: map rooms
+www/images/map.png: background for your heatmap
+www/images/overlay.png: this will be placed on top of your map+heatmap	
